@@ -1,0 +1,490 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #7e7e7e;
+  font: 400 1em/1.5em "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #ce606f;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+  font-weight: 600;
+}
+
+h1,
+.h1 {
+  font-size: 2.5em;
+  margin: 0 0 0.2em;
+}
+
+h2,
+.h2 {
+  font-size: 1.5em;
+  margin: 0 0 0.33em;
+}
+
+h3,
+.h3 {
+  font-size: 1.25em;
+  margin: 0 0 0.5em;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.subline {
+  color: #768191;
+  font-weight: normal;
+}
+
+.container {
+  left: 50%;
+  max-width: 740px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  /*background: url('http://cdn.artmight.com/albums/2011-02-07/art-upload-2/s/Sisley-Alfred/normal_Sisley-Alfred-The-Seine-at-Argenteuil-Sun.jpg');*/
+}
+
+.map {
+  margin: 15em;
+  position: relative;
+  /* max-width: 80%; */
+  
+}
+
+.map-markers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.map-marker {
+  position: absolute;
+}
+
+.map-marker:after {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: pop;
+          animation-name: pop;
+  border-radius: 50%;
+  border: 1px solid #ce606f;
+  content: "";
+  height: 2em;
+  left: 0;
+  margin: -0.5em 0 0 -0.5em;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 2em;
+}
+
+.map-marker:hover .map-marker-info {
+  display: block;
+}
+
+.map-marker a {
+  background-color: #9e763a;
+  border-radius: 50%;
+  height: 1em;
+  display: block;
+  text-indent: -9999px;
+  width: 1em;
+}
+
+.map-marker .textlink{
+  color:#404750;
+  background-color: white;
+  text-indent: 0%;
+  width: fit-content;
+  height: fit-content;
+}
+
+.map-marker-img {
+  margin: 0;
+  max-width: 20em;
+  max-width: 20em;
+  padding: 15px;
+  align-content: center;
+}
+
+.map-marker-not-afraid-to-look {
+  left: 45%;
+  top: 20%;
+}
+
+.map-marker-el-malpais {
+  left: 27%;
+  top: 55%;
+}
+
+.map-marker-el-malpais:after {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.map-marker-devils-tower {
+  left: 35%;
+  top: 26%;
+}
+
+.map-marker-devils-tower:after {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.map-marker-veterans-memorial {
+  left: 86.5%;
+  top: 43.5%;
+}
+
+.map-marker-san-francisco {
+  left: 1%;
+  top: 46%;
+}
+
+.map-marker-san-francisco:after {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.map-marker-seattle {
+  left: 8%;
+  top: 1%;
+}
+
+.map-marker-seattle:after {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.map-marker-info {
+  display: none;
+  left: 50%;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -2em);
+          transform: translate(-50%, -2em);
+  width: 20em;
+  z-index: 999;
+}
+
+.map-marker-info header {
+  background-color: #9e763a;
+  border-radius: 0.5em 0.5em 0 0;
+  color: #fff;
+  padding: 0.5em 1em;
+}
+
+.map-marker-info main {
+  background-color: #fff;
+  border-radius: 0 0 0.5em 0.5em;
+  color: #7e7e7e;
+  padding: 0.5em 1em;
+}
+
+.map-marker-info h2 {
+  margin-bottom: 0;
+}
+
+.map-marker-info-inner {
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  font-size: 0.875em;
+}
+
+.map-marker-info-inner:after {
+  border-left: 0.75em solid transparent;
+  border-right: 0.75em solid transparent;
+  border-top: 1em solid #fff;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounce-in {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+            transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounce-in {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+            transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+.animate-bounce-in {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: bounce-in;
+          animation-name: bounce-in;
+}
+
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  8% {
+    opacity: 0.4;
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  8% {
+    opacity: 0.4;
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.animate-pop {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: pop;
+          animation-name: pop;
+}
+
+.hoverable {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  vertical-align: middle;
+  position: relative;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.hoverable:before {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before {
+  opacity: 1;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+@-webkit-keyframes bounce-animation {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-animation {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce-animation;
+          animation-name: bounce-animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+a{
+  color:black;
+}
+
+
+
+.navbar-nav > li{
+  margin-left:10px;
+  margin-right:10px;
+}
+/*# sourceMappingURL=stylesheet.css.map */
