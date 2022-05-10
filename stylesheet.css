@@ -11,46 +11,47 @@
 body {
   background-color: #ffffff;
   color: #7e7e7e;
-  font: 400 1em/1.5em "Source Sans Pro", sans-serif;
-  margin: 0;
-}
+  /* font: 400 1em/1.5em "Source Sans Pro", sans-serif; */
+  font:"Source Sans Pro", sans-serif;
 
-a {
-  color: #ce606f;
+  margin: 0;
 }
 
 h1,
 h2,
 h3 {
-  color: #fff;
+  color: black;
   font-weight: 600;
 }
 
 h1,
 .h1 {
-  font-size: 2.5em;
+  /* font-size: 2.5em; */
   margin: 0 0 0.2em;
 }
 
 h2,
 .h2 {
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 0 0 0.33em;
 }
 
 h3,
 .h3 {
-  font-size: 1.25em;
+  /* font-size: 1.25em; */
   margin: 0 0 0.5em;
 }
 
 p {
+  font-size: 0.8em !important;
   margin: 0.5em 0;
 }
 
 svg {
   height: auto;
   max-width: 100%;
+  fill:black;
+  stroke: white;
 }
 
 .text-center {
@@ -64,19 +65,21 @@ svg {
 
 .container {
   left: 50%;
-  max-width: 740px;
+  max-width: 1000px;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
   /*background: url('http://cdn.artmight.com/albums/2011-02-07/art-upload-2/s/Sisley-Alfred/normal_Sisley-Alfred-The-Seine-at-Argenteuil-Sun.jpg');*/
 }
 
+
+
 .map {
-  margin: 15em;
+  margin: 10em;
   position: relative;
-  /* max-width: 80%; */
+  max-width: 100%;
   
 }
 
@@ -128,12 +131,13 @@ svg {
   text-indent: 0%;
   width: fit-content;
   height: fit-content;
+  font-size: 1em;
 }
 
 .map-marker-img {
   margin: 0;
-  max-width: 20em;
-  max-width: 20em;
+  max-width: 15em;  
+  max-height: 15em;
   padding: 15px;
   align-content: center;
 }
@@ -141,6 +145,11 @@ svg {
 .map-marker-not-afraid-to-look {
   left: 45%;
   top: 20%;
+}
+
+.map-marker-not-afraid-to-look:after {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .map-marker-el-malpais {
@@ -153,14 +162,24 @@ svg {
           animation-delay: 3s;
 }
 
+.map-marker-crazy-horse {
+  left: 47%;
+  top: 25%;
+}
+
+.map-marker-crazy-horse:after {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
 .map-marker-devils-tower {
   left: 35%;
   top: 26%;
 }
 
 .map-marker-devils-tower:after {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .map-marker-veterans-memorial {
@@ -168,24 +187,20 @@ svg {
   top: 43.5%;
 }
 
-.map-marker-san-francisco {
-  left: 1%;
-  top: 46%;
+.map-marker-ocmulgee {
+  left: 47%;
+  top: 65%;
 }
 
-.map-marker-san-francisco:after {
+.map-marker-ocmulgee:after {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-.map-marker-seattle {
-  left: 8%;
-  top: 1%;
-}
 
-.map-marker-seattle:after {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+.map-marker-veterans-memorial:after {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .map-marker-info {
@@ -195,7 +210,7 @@ svg {
   bottom: 0;
   -webkit-transform: translate(-50%, -2em);
           transform: translate(-50%, -2em);
-  width: 20em;
+  width: 18em;
   z-index: 999;
 }
 
@@ -203,7 +218,7 @@ svg {
   background-color: #9e763a;
   border-radius: 0.5em 0.5em 0 0;
   color: #fff;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.5em;
 }
 
 .map-marker-info main {
@@ -221,7 +236,7 @@ svg {
   border-radius: 0.5em;
   -webkit-box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
-  font-size: 0.875em;
+  /* font-size: ; */
 }
 
 .map-marker-info-inner:after {
@@ -479,6 +494,7 @@ svg {
 
 a{
   color:black;
+  text-decoration: none;
 }
 
 
