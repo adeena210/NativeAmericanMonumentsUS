@@ -75,6 +75,11 @@ svg {
   /*background: url('http://cdn.artmight.com/albums/2011-02-07/art-upload-2/s/Sisley-Alfred/normal_Sisley-Alfred-The-Seine-at-Argenteuil-Sun.jpg');*/
 }
 
+.container-lg{
+  align-items: center !important;
+  text-align: center;
+}
+
 
 
 .map {
@@ -491,13 +496,13 @@ svg {
 
 a{
   color:black;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 
 .navbar {
   background-color: black;
-  padding: 1em;
+  padding: 1em !important;
 }
 
 .navbar-nav > li{
@@ -509,4 +514,19 @@ a{
 .vert-form {
   margin-top: 3%;
 }
+
+form {
+  margin: 0 auto;
+  text-align: center;
+  max-width: fit-content;
+}
+
+.form-control-lg {
+  background-color: #eeeeee !important;
+}
+
+.form-control-lg .button {
+  background-color: white;
+}
+
 /*# sourceMappingURL=stylesheet.css.map */
