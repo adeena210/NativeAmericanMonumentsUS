@@ -43,7 +43,7 @@ h3,
   margin: 0 0 0.5em;
 }
 
-p {
+p.mark {
   font-size: 0.8em !important;
   margin: 0.5em 0;
 }
@@ -530,7 +530,11 @@ form {
 }
 
 .monument-content {
-  padding-left: 20px;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
 }
 
+.monument {
+  font-size:1em;
+}
 /*# sourceMappingURL=stylesheet.css.map */
