@@ -150,8 +150,8 @@ svg {
 }
 
 .map-marker-not-afraid-to-look {
-  left: 45%;
-  top: 20%;
+  left: 51%;
+  top: 18%;
 }
 
 .map-marker-not-afraid-to-look:after {
@@ -160,8 +160,8 @@ svg {
 }
 
 .map-marker-el-malpais {
-  left: 27%;
-  top: 55%;
+  left: 38%;
+  top: 59%;
 }
 
 .map-marker-el-malpais:after {
@@ -170,8 +170,8 @@ svg {
 }
 
 .map-marker-crazy-horse {
-  left: 47%;
-  top: 25%;
+  left: 46.5%;
+  top: 28%;
 }
 
 .map-marker-crazy-horse:after {
@@ -180,7 +180,7 @@ svg {
 }
 
 .map-marker-devils-tower {
-  left: 35%;
+  left: 44.5%;
   top: 26%;
 }
 
@@ -190,13 +190,13 @@ svg {
 }
 
 .map-marker-veterans-memorial {
-  left: 86.5%;
-  top: 43.5%;
+  left: 87%;
+  top: 37%;
 }
 
 .map-marker-sittingbull {
-  left: 47%;
-  top: 65%;
+  left: 51%;
+  top: 24%;
 }
 
 .map-marker-sittingbull:after {
