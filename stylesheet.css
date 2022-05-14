@@ -194,12 +194,12 @@ svg {
   top: 43.5%;
 }
 
-.map-marker-ocmulgee {
+.map-marker-sittingbull {
   left: 47%;
   top: 65%;
 }
 
-.map-marker-ocmulgee:after {
+.map-marker-sittingbull:after {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
