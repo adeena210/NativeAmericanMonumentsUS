@@ -535,6 +535,11 @@ form {
 }
 
 .monument {
-  font-size:1em;
+  font-size: 1em;
+}
+
+img.crazy-horse {
+  width: 35em;
+  height: auto;
 }
 /*# sourceMappingURL=stylesheet.css.map */
